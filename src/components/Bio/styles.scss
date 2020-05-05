@@ -1,0 +1,17 @@
+@import '../../common/constants.scss';
+
+.bioWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    @media ($break-desktop) {
+        flex-direction: row;
+    }
+
+    h1, h2 {
+        padding: 0px;
+        margin: 0px;
+    }
+}

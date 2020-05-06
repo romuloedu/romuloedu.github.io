@@ -1,32 +1,33 @@
 @import '../../common/constants.scss';
 
 .introWrapper {
-    display: flex;
     width: 100%;
     height: 100%;
+    display: flex;
     padding: 0px;
     margin: 0px;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    background: linear-gradient(to bottom, #DCDCDC 90%,$yellow 10%);
+    flex-direction: column;
+    overflow: hidden;
 
     @media ($break-desktop) {
         flex-direction: row;
-        background: linear-gradient(to right, #DCDCDC 80%,$yellow 20%);
     }
 
-    .welcomeMessage {
+    .col1{
         flex: 1;
         word-wrap: break-word;
         text-align: center;
         padding: 20px;
+        margin-top: 15vmin;
     
         @media ($break-desktop) {
             text-align: left;
+            margin-top: 0px;
             margin-left: 10vw;
         }
-    
+
         span{
             font-size: 3vmax;
             text-transform: uppercase;
@@ -67,7 +68,7 @@
         a{
             min-width: 140px;
             display: inline-block;
-            background-color: $blue;
+            background-color: $green;
             font-weight: 700;
             padding: 13px;
             margin-top: 35px;
@@ -80,20 +81,111 @@
             transition: background-color 1s;
     
             &:hover{
-                background-color: $dark-blue;
+                background-color: $dark-green;
             }
         }
-        
     }
     
-    .profileImage {
-        flex: 1; 
-        text-align: right;
-        display: none;
+    @keyframes animeLayer1 {
+        from{transform: skewX(0deg) translateX(100%)}
+        to{transform: skewX(-10deg) translateX(0%)}
+    }
     
+    @keyframes animeLayer2 {
+        from{transform: skewX(0deg) translateX(100%)}
+        to{transform: skewX(-10deg) translateX(10%)}
+    }
+    
+    @keyframes animeLayer3 {
+        from{transform: skewX(0deg) translateX(100%)}
+        to{transform: skewX(-10deg) translateX(20%)}
+    }
+
+    @keyframes animeLayer4 {
+        from{transform: skewX(0deg) translateX(100%)}
+        to{transform: skewX(-10deg) translateX(30%)}
+    }
+
+    @keyframes animeLayer1Mobile {
+        from{transform: skewY(0deg) translateY(100%)}
+        to{transform: skewY(-10deg) translateY(0%)}
+    }
+
+    @keyframes animeLayer2Mobile {
+        from{transform: skewY(0deg) translateY(100%)}
+        to{transform: skewY(-10deg) translateY(15%)}
+    }
+
+    @keyframes animeLayer3Mobile {
+        from{transform: skewY(0deg) translateY(100%)}
+        to{transform: skewY(-10deg) translateY(30%)}
+    }
+
+    @keyframes animeLayer4Mobile {
+        from{transform: skewY(0deg) translateY(100%)}
+        to{transform: skewY(-10deg) translateY(45%)}
+    }
+
+    .col2{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
         @media ($break-desktop) {
-            text-align: left;
-            display: inline-flex;
+            height: 100%;
+        }
+        
+        .layer1 {
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background-color: $light-purple;
+            animation: animeLayer1Mobile forwards 1s;        
+
+            @media ($break-desktop) {
+                height: 100%;
+                animation: animeLayer1 forwards 1s;
+            }
+        }
+
+        .layer2 {
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background-color: $light-red;
+            animation: animeLayer2Mobile forwards 1.2s;             
+
+            @media ($break-desktop) {
+                height: 100%;
+                animation: animeLayer2 forwards 1.2s;
+            }
+        }
+
+        .layer3 {
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background-color: $light-yellow;
+            animation: animeLayer3Mobile forwards 1.4s;          
+
+            @media ($break-desktop) {
+                height: 100%;
+                animation: animeLayer3 forwards 1.4s;
+            }
+        }
+
+        .layer4 {
+            position: absolute;
+            width: 100%;
+            height: 30%;
+            background-color: $blue;
+            animation: animeLayer4Mobile forwards 1.6s;          
+
+            @media ($break-desktop) {
+                height: 100%;
+                animation: animeLayer4 forwards 1.6s;
+            }
         }
     }
 }

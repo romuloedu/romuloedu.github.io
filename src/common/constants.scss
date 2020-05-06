@@ -1,5 +1,17 @@
 $break-desktop: 'min-width: 1025px';
 
+$red: #FC4F59;
+$light-red: lighten($red, 10%);
+$dark-red: darken($red, 10%);
+
+$green: #23B574;
+$light-green: lighten($green, 10%);
+$dark-green: darken($green, 10%);
+
+$purple: #7F88BD;
+$light-purple: lighten($purple, 10%);
+$dark-purple: darken($purple, 10%);
+
 $yellow: #F2A53F;
 $light-yellow: lighten($yellow, 10%);
 $dark-yellow: darken($yellow, 10%);

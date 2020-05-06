@@ -2,6 +2,7 @@ import React from 'react';
 
 import Intro from '../../components/Intro';
 import Bio from '../../components/Bio';
+import Skills from '../../components/Skills';
 
 import './styles.css';
 
@@ -10,6 +11,7 @@ const Home = () => {
         <div className="container">
             <Intro />
             <Bio />
+            <Skills />
             {/* <section>
                 <span>Skills</span>
             </section>

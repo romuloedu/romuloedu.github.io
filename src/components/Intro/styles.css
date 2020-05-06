@@ -334,7 +334,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #a1a7ce;
+  background-image: linear-gradient(135deg, #a1a7ce 10%, #7F88BD 100%);
   -webkit-animation: animeLayer1Mobile forwards 1s;
           animation: animeLayer1Mobile forwards 1s;
 }
@@ -351,7 +351,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #fd8188;
+  background-image: linear-gradient(135deg, #fd8188 10%, #FC4F59 100%);
   -webkit-animation: animeLayer2Mobile forwards 1.2s;
           animation: animeLayer2Mobile forwards 1.2s;
 }
@@ -368,7 +368,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #f5bb6f;
+  background-image: linear-gradient(135deg, #f5bb6f 10%, #F2A53F 100%);
   -webkit-animation: animeLayer3Mobile forwards 1.4s;
           animation: animeLayer3Mobile forwards 1.4s;
 }
@@ -385,7 +385,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #28A1AB;
+  background-image: linear-gradient(135deg, #36c4d0 10%, #28A1AB 100%);
   -webkit-animation: animeLayer4Mobile forwards 1.6s;
           animation: animeLayer4Mobile forwards 1.6s;
 }

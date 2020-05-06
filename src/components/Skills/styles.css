@@ -12,8 +12,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(127, 136, 189, 0.1);
-  padding: 120px 40px 120px 40px;
+  padding: 40px;
+}
+
+@media (min-width: 1025px) {
+  .skillWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .skillWrapper .skillTitle {
@@ -21,6 +31,85 @@
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.skillWrapper .skillCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1025px) {
+  .skillWrapper .skillCards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.skillWrapper .skillCards div {
+  width: 100%;
+  min-height: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px 0px 10px 0px;
+  padding: 50px;
+  background-color: azure;
+}
+
+@media (min-width: 1025px) {
+  .skillWrapper .skillCards div {
+    width: 40%;
+    margin: 0px;
+  }
+}
+
+.skillWrapper .skillCards div:nth-child(1n) {
+  margin: 0px 30px 30px 0px;
+}
+
+.skillWrapper .skillCards div:nth-child(1) {
+  background-image: linear-gradient(135deg, #36c4d0 10%, #28A1AB 100%);
+}
+
+.skillWrapper .skillCards div:nth-child(2) {
+  background-image: linear-gradient(135deg, #f5bb6f 10%, #F2A53F 100%);
+}
+
+.skillWrapper .skillCards div:nth-child(3) {
+  background-image: linear-gradient(135deg, #33d88f 10%, #23B574 100%);
+}
+
+.skillWrapper .skillCards div:nth-child(4) {
+  background-image: linear-gradient(135deg, #fd8188 10%, #FC4F59 100%);
+}
+
+.skillWrapper .skillCards .skillCard h1 {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 5vw;
+}
+
+@media (min-width: 1025px) {
+  .skillWrapper .skillCards .skillCard h1 {
+    font-size: 2vw;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

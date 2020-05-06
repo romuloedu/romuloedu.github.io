@@ -4,17 +4,78 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgba($purple, 0.1);
-    padding: 120px 40px 120px 40px;
+    align-items: center;    
+    padding: 40px;
 
     @media ($break-desktop) {
-        // margin: 40px 100px 40px 100px;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
-    .skillTitle{
+    .skillTitle {
         flex: 1;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+    }
+
+    .skillCards {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @media ($break-desktop) {
+            flex-direction: row;
+        }
+
+        div {
+            width: 100%;
+            min-height: 120px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin: 10px 0px 10px 0px;
+            padding: 50px;
+            background-color: azure;
+
+            @media ($break-desktop) {
+                width: 40%;
+                margin: 0px;
+            }
+
+            &:nth-child(1n){
+                margin: 0px 30px 30px 0px;
+            }
+
+            &:nth-child(1){
+                background-image: linear-gradient( 135deg, $light-blue 10%, $blue 100%);
+            }
+
+            &:nth-child(2){
+                background-image: linear-gradient( 135deg, $light-yellow 10%, $yellow 100%);
+            }
+
+            &:nth-child(3){
+                background-image: linear-gradient( 135deg, $light-green 10%, $green 100%);
+            }
+            &:nth-child(4){
+                background-image: linear-gradient( 135deg, $light-red 10%, $red 100%);
+            }
+        }
+
+        .skillCard {
+            h1 {
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 5vw;
+
+                @media ($break-desktop) {
+                    font-size: 2vw;
+                }
+            }
+        }
     }
 }

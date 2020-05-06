@@ -13,16 +13,17 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
-  margin: 10px 0px 10px 0px;
+  background-color: rgba(127, 136, 189, 0.08);
 }
 
 @media (min-width: 1025px) {
   .bioWrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 40px 100px 40px 100px;
   }
 }
 
@@ -98,6 +99,7 @@
   font-size: 15px;
   text-decoration: none;
   text-align: center;
+  background-color: #fff;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }

@@ -9,10 +9,30 @@ const Skills = () => {
                 <h1 className="sectionTitle">Minhas Habilidades</h1>
             </div>
             <div className="skillCards">
-                <div className="skillCard">Card 1</div>
-                <div className="skillCard">Card 2</div>
-                <div className="skillCard">Card 3</div>
-                <div className="skillCard">Card 4</div>
+                <div className="skillCard">
+                    <h1>
+                        C# (C Sharp)
+                    </h1>
+                    <p>Lorem impsum sit dolor ammet.</p>
+                </div>
+                <div className="skillCard">
+                    <h1>
+                        React e React Native
+                    </h1>
+                    <p>Lorem impsum sit dolor ammet.</p>
+                </div>
+                <div className="skillCard">
+                    <h1>
+                        CSS e Javascript
+                    </h1>
+                    <p>Lorem impsum sit dolor ammet.</p>
+                </div>
+                <div className="skillCard">
+                    <h1>
+                        Banco de Dados
+                    </h1>
+                    <p>Lorem impsum sit dolor ammet.</p>
+                </div>
             </div>
         </section>
     );

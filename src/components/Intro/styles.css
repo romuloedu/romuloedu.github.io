@@ -75,7 +75,7 @@
 }
 
 .introWrapper .col1 span {
-  font-size: 3vw;
+  font-size: 3vmax;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1.2;
@@ -94,7 +94,7 @@
 }
 
 .introWrapper .col1 h1 {
-  font-size: 8vw;
+  font-size: 5.5vmax;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -106,7 +106,8 @@
 }
 
 .introWrapper .col1 h2 {
-  font-size: 3vw;
+  font-size: 2.6vmax;
+  line-break: loose;
   font-weight: 300;
   color: gray;
 }

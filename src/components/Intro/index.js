@@ -9,7 +9,7 @@ const Intro = () => {
                 <span>Olá,</span>
                 <h1>Sou Romulo.</h1>
                 <h2>Desenvolvedor Fullstack | C#, React e NodeJS.</h2>
-                <a href="#">Saiba Mais</a>
+                <a href="#">Me Conheça</a>
             </div>
             <div className="col2">
                 <div className="layer1"></div>

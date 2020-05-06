@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,gBAAgB,ECOX,yBAAO;CDNf",
+    "sources": [
+        "styles.scss",
+        "../../common/constants.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

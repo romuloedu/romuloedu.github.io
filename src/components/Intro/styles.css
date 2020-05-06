@@ -61,7 +61,7 @@
   word-wrap: break-word;
   text-align: center;
   padding: 20px;
-  margin-top: 15vmin;
+  margin-top: 15vmax;
   -webkit-animation: animateWelcomeInfo forwards 1s;
           animation: animateWelcomeInfo forwards 1s;
 }
@@ -75,7 +75,7 @@
 }
 
 .introWrapper .col1 span {
-  font-size: 3vmax;
+  font-size: 3vw;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1.2;
@@ -94,7 +94,7 @@
 }
 
 .introWrapper .col1 h1 {
-  font-size: 8vmax;
+  font-size: 8vw;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -106,7 +106,7 @@
 }
 
 .introWrapper .col1 h2 {
-  font-size: 2.5vmax;
+  font-size: 3vw;
   font-weight: 300;
   color: gray;
 }
@@ -320,8 +320,9 @@
       -ms-flex: 1;
           flex: 1;
   width: 100%;
-  height: 20%;
+  min-height: 40%;
   position: relative;
+  z-index: -1;
 }
 
 @media (min-width: 1025px) {

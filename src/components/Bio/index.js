@@ -21,11 +21,13 @@ const Bio = () => {
                     e PL/SQL e com os bancos Oracle, MySQL, PostgreSQL e MongoDB.
                     Além de padrões de projeto com MVC e MVVM.
                 </p>
-                <a href="#" className="downloadCV">Download do Currículo</a>
+                <a href="#" className="downloadCV">
+                    Download do Meu Currículo
+                </a>
                 <a href="https://linkedin.com/in/romuloeduardo/"
                     className="visitLinkedIn"
                     target="blank">
-                    Visite o LinkedIn
+                    Meu Perfil no LinkedIn
                 </a>
             </div>
         </section >

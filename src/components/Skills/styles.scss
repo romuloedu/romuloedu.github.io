@@ -73,7 +73,17 @@
                 font-size: 5vw;
 
                 @media ($break-desktop) {
-                    font-size: 2vw;
+                    font-size: 2.3vw;
+                }
+            }
+
+            p {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 3vw;
+
+                @media ($break-desktop) {
+                    font-size: 1.3vw;
                 }
             }
         }

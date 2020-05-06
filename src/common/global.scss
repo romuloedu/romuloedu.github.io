@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
 @import './constants.scss';
 
 html, body {
@@ -24,11 +25,15 @@ html, body {
   position: relative;
   padding: 0px 0px 5px 0px;
   margin: 0px 0px 20px 0px;
-  font-size: 40px;
+  font-size: 6vw;
   font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
   color: $dark-yellow;
+
+  @media ($break-desktop) {
+    font-size: 3.5vw;
+  }
 
   &:after{
       position: absolute;

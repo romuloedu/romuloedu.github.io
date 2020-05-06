@@ -5,12 +5,13 @@ import './styles.css';
 const Bio = () => {
     return (
         <section className="bioWrapper">
-            <div className="bioImage">
-                Minha foto
-            </div>
-            <div className="bio">
+            <div className="bioTitle">
                 <h1>Sobre mim</h1>
-                <p>Lorem ipsum sit dolor ammet</p>
+            </div>
+            <div className="bioDescription">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
             </div>
         </section>
     );

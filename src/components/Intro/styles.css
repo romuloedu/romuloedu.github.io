@@ -16,8 +16,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #fff), color-stop(10%, orange));
-  background: linear-gradient(to bottom, #fff 90%, orange 10%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #DCDCDC), color-stop(10%, #F2A53F));
+  background: linear-gradient(to bottom, #DCDCDC 90%, #F2A53F 10%);
 }
 
 @media (min-width: 1025px) {
@@ -26,12 +26,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background: -webkit-gradient(linear, left top, right top, color-stop(80%, #fff), color-stop(20%, orange));
-    background: linear-gradient(to right, #fff 80%, orange 20%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(80%, #DCDCDC), color-stop(20%, #F2A53F));
+    background: linear-gradient(to right, #DCDCDC 80%, #F2A53F 20%);
   }
 }
 
-.welcomeMessage {
+.introWrapper .welcomeMessage {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -41,13 +41,13 @@
 }
 
 @media (min-width: 1025px) {
-  .welcomeMessage {
+  .introWrapper .welcomeMessage {
     text-align: left;
     margin-left: 10vw;
   }
 }
 
-.welcomeMessage span {
+.introWrapper .welcomeMessage span {
   font-size: 3vmax;
   text-transform: uppercase;
   font-weight: 300;
@@ -55,42 +55,42 @@
 }
 
 @media (min-width: 1025px) {
-  .welcomeMessage span {
+  .introWrapper .welcomeMessage span {
     font-size: 1.5vw;
   }
 }
 
-.welcomeMessage h1, .welcomeMessage h2 {
+.introWrapper .welcomeMessage h1, .introWrapper .welcomeMessage h2 {
   margin: 0px;
   padding: 0px;
   text-transform: uppercase;
 }
 
-.welcomeMessage h1 {
+.introWrapper .welcomeMessage h1 {
   font-size: 8vmax;
   font-weight: 600;
   line-height: 1.2;
 }
 
 @media (min-width: 1025px) {
-  .welcomeMessage h1 {
+  .introWrapper .welcomeMessage h1 {
     font-size: 5vw;
   }
 }
 
-.welcomeMessage h2 {
+.introWrapper .welcomeMessage h2 {
   font-size: 2.5vmax;
   font-weight: 300;
   color: gray;
 }
 
 @media (min-width: 1025px) {
-  .welcomeMessage h2 {
+  .introWrapper .welcomeMessage h2 {
     font-size: 1.3vw;
   }
 }
 
-.welcomeMessage a {
+.introWrapper .welcomeMessage a {
   min-width: 140px;
   display: inline-block;
   background-color: #28A1AB;
@@ -107,11 +107,11 @@
   transition: background-color 1s;
 }
 
-.welcomeMessage a:hover {
+.introWrapper .welcomeMessage a:hover {
   background-color: #1e7a82;
 }
 
-.profileImage {
+.introWrapper .profileImage {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -120,7 +120,7 @@
 }
 
 @media (min-width: 1025px) {
-  .profileImage {
+  .introWrapper .profileImage {
     text-align: left;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;

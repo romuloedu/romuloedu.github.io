@@ -9,8 +9,8 @@ const Home = () => {
     return (
         <div className="container">
             <Intro />
-            {/* <Bio />
-            <section>
+            <Bio />
+            {/* <section>
                 <span>Skills</span>
             </section>
             <section>

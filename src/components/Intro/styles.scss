@@ -9,91 +9,91 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background: linear-gradient(to bottom, #fff 90%,orange 10%);
+    background: linear-gradient(to bottom, #DCDCDC 90%,$yellow 10%);
 
     @media ($break-desktop) {
         flex-direction: row;
-        background: linear-gradient(to right, #fff 80%,orange 20%);
-    }
-}
-
-.welcomeMessage {
-    flex: 1;
-    word-wrap: break-word;
-    text-align: center;
-    padding: 20px;
-
-    @media ($break-desktop) {
-        text-align: left;
-        margin-left: 10vw;
+        background: linear-gradient(to right, #DCDCDC 80%,$yellow 20%);
     }
 
-    span{
-        font-size: 3vmax;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1.2;   
-
-        @media ($break-desktop) {
-            font-size: 1.5vw;
-        }
-    }
-
-    h1, h2 {
-        margin: 0px;
-        padding: 0px;
-        text-transform: uppercase;        
-    }
-
-    h1 {
-        font-size: 8vmax;
-        font-weight: 600;
-        line-height: 1.2;
-
-        @media ($break-desktop) {
-            font-size: 5vw;
-        }
-    }
-
-    h2 {
-        font-size: 2.5vmax;
-        font-weight: 300;
-        color: gray;
-
-        @media ($break-desktop) {
-            font-size: 1.3vw;
-        }
-    }
-
-    a{
-        min-width: 140px;
-        display: inline-block;
-        background-color: $blue;
-        font-weight: 700;
-        padding: 13px;
-        margin-top: 35px;
-        border-radius: 5px;
-        color: white;
-        text-transform: uppercase;
-        font-size: 15px;
-        text-decoration: none;
+    .welcomeMessage {
+        flex: 1;
+        word-wrap: break-word;
         text-align: center;
-        transition: background-color 1s;
-
-        &:hover{
-            background-color: $dark-blue;
+        padding: 20px;
+    
+        @media ($break-desktop) {
+            text-align: left;
+            margin-left: 10vw;
         }
+    
+        span{
+            font-size: 3vmax;
+            text-transform: uppercase;
+            font-weight: 300;
+            line-height: 1.2;   
+    
+            @media ($break-desktop) {
+                font-size: 1.5vw;
+            }
+        }
+    
+        h1, h2 {
+            margin: 0px;
+            padding: 0px;
+            text-transform: uppercase;        
+        }
+    
+        h1 {
+            font-size: 8vmax;
+            font-weight: 600;
+            line-height: 1.2;
+    
+            @media ($break-desktop) {
+                font-size: 5vw;
+            }
+        }
+    
+        h2 {
+            font-size: 2.5vmax;
+            font-weight: 300;
+            color: gray;
+    
+            @media ($break-desktop) {
+                font-size: 1.3vw;
+            }
+        }
+    
+        a{
+            min-width: 140px;
+            display: inline-block;
+            background-color: $blue;
+            font-weight: 700;
+            padding: 13px;
+            margin-top: 35px;
+            border-radius: 5px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 1s;
+    
+            &:hover{
+                background-color: $dark-blue;
+            }
+        }
+        
     }
     
-}
-
-.profileImage {
-    flex: 1; 
-    text-align: right;
-    display: none;
-
-    @media ($break-desktop) {
-        text-align: left;
-        display: inline-flex;
+    .profileImage {
+        flex: 1; 
+        text-align: right;
+        display: none;
+    
+        @media ($break-desktop) {
+            text-align: left;
+            display: inline-flex;
+        }
     }
 }

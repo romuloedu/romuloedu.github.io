@@ -2,16 +2,49 @@
 
 .bioWrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 10px 0px 10px 0px;
 
     @media ($break-desktop) {
         flex-direction: row;
+        margin: 60px 100px 60px 100px;
     }
 
-    h1, h2 {
-        padding: 0px;
-        margin: 0px;
+    .bioTitle{
+        flex: 1;
+        text-align: center;
+
+        h1{
+            position: relative;
+            padding: 0px 0px 5px 0px;
+            margin: 0px 0px 20px 0px;
+            font-size: 40px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            color: $dark-yellow;
+
+            &:after{
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 1px;
+                left: 25%;
+                bottom: 0px;
+                background-color: $dark-yellow;
+            }
+        }
+    }
+
+    .bioDescription{
+        flex: 1;
+        text-align: justify;
+
+        p {
+            line-height: 1.7;
+        }
     }
 }

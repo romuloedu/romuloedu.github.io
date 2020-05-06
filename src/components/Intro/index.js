@@ -14,7 +14,7 @@ const Intro = () => {
                 <a href="#">Saiba Mais</a>
             </div>
             <div className="profileImage">
-                <img src={ProfilePhoto} alt="Foto de Romulo Eduardo" />
+                {/* <img src={ProfilePhoto} alt="Foto de Romulo Eduardo" /> */}
             </div>
         </section>
     );

@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className="container">
             <Intro />
-            <Bio />
+            {/* <Bio />
             <section>
                 <span>Skills</span>
             </section>
@@ -24,7 +24,7 @@ const Home = () => {
             </section>
             <section>
                 <span>Rodapé</span>
-            </section>
+            </section> */}
         </div>
     );
 }

@@ -1,1 +1,5 @@
-$break-desktop: 'min-width: 1025px'; 
+$break-desktop: 'min-width: 1025px';
+
+$blue: #28A1AB;
+$light-blue: lighten($blue, 10%);
+$dark-blue: darken($blue, 10%);

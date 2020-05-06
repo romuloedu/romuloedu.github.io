@@ -4,11 +4,16 @@ import './styles.css';
 
 const Skills = () => {
     return (
-        <section className="skillsWrapper">
-            <div class="skillCard">Card 1</div>
-            <div class="skillCard">Card 2</div>
-            <div class="skillCard">Card 3</div>
-            <div class="skillCard">Card 4</div>
+        <section className="skillWrapper">
+            <div className="skillTitle">
+                <h1 className="sectionTitle">Minhas Habilidades</h1>
+            </div>
+            <div className="skillCards">
+                <div className="skillCard">Card 1</div>
+                <div className="skillCard">Card 2</div>
+                <div className="skillCard">Card 3</div>
+                <div className="skillCard">Card 4</div>
+            </div>
         </section>
     );
 }

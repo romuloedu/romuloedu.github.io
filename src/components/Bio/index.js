@@ -6,7 +6,7 @@ const Bio = () => {
     return (
         <section className="bioWrapper">
             <div className="bioTitle">
-                <h1>Sobre mim</h1>
+                <h1 className="sectionTitle">Sobre mim</h1>
             </div>
             <div className="bioDescription">
                 <p>

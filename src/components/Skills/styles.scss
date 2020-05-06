@@ -1,0 +1,20 @@
+@import '../../common/constants.scss';
+
+.skillWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($purple, 0.1);
+    padding: 120px 40px 120px 40px;
+
+    @media ($break-desktop) {
+        // margin: 40px 100px 40px 100px;
+    }
+
+    .skillTitle{
+        flex: 1;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

@@ -15,7 +15,6 @@ const Bio = () => {
                     de aplicativos e sites utilizando a linguagem C# com os
                     frameworks .NET Standard e .NET Core (multiplataforma).
                 </p>
-
                 <p>
                     No contexto do desenvolvimento de softwares, trabalhei com
                     ORMs como NHibernate e Entity Framework, as linguagens SQL
@@ -47,6 +46,12 @@ const Bio = () => {
                     Docker e Azure e algoritmos de inteligência artificial
                     usando R e Python.
                 </p>
+                <a href="#" className="downloadCV">Download do Currículo</a>
+                <a href="https://linkedin.com/in/romuloeduardo/"
+                    className="visitLinkedIn"
+                    target="blank">
+                    Visite o LinkedIn
+                </a>
             </div>
         </section >
     );

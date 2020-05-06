@@ -15,12 +15,24 @@
         flex-direction: row;
     }
 
+    @keyframes animateWelcomeInfo {
+        from{
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
     .col1{
         flex: 1;
         word-wrap: break-word;
         text-align: center;
         padding: 20px;
         margin-top: 15vmin;
+        animation: animateWelcomeInfo forwards 1s;
     
         @media ($break-desktop) {
             text-align: left;
@@ -69,6 +81,7 @@
             min-width: 140px;
             display: inline-block;
             background-color: $green;
+            border: solid 2px $green;
             font-weight: 700;
             padding: 13px;
             margin-top: 35px;
@@ -107,7 +120,7 @@
     }
 
     @keyframes animeLayer1Mobile {
-        from{transform: skewY(0deg) translateY(100%)}
+        from{transform: skewY(0deg) translateY(100%);}
         to{transform: skewY(-10deg) translateY(0%)}
     }
 

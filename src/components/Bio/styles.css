@@ -22,7 +22,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 60px 100px 60px 100px;
+    margin: 40px 100px 40px 100px;
   }
 }
 
@@ -63,5 +63,76 @@
 
 .bioWrapper .bioDescription p {
   line-height: 1.7;
+}
+
+.bioWrapper .bioDescription a {
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+@media (min-width: 1025px) {
+  .bioWrapper .bioDescription a {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+.bioWrapper .bioDescription .downloadCV {
+  min-width: 90%;
+  display: inline-block;
+  border: solid 2px #23B574;
+  background-color: #23B574;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  margin-top: 20px;
+}
+
+@media (min-width: 1025px) {
+  .bioWrapper .bioDescription .downloadCV {
+    min-width: 140px;
+  }
+}
+
+.bioWrapper .bioDescription .downloadCV:hover {
+  background-color: #1b8a59;
+}
+
+.bioWrapper .bioDescription .visitLinkedIn {
+  min-width: 90%;
+  display: inline-block;
+  border: solid 2px #23B574;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 5px;
+  color: #23B574;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  margin-top: 20px;
+}
+
+@media (min-width: 1025px) {
+  .bioWrapper .bioDescription .visitLinkedIn {
+    min-width: 140px;
+  }
+}
+
+.bioWrapper .bioDescription .visitLinkedIn:hover {
+  color: #fff;
+  background-color: #1b8a59;
+  -webkit-box-ordinal-group: NaN;
+      -ms-flex-order: solid 2px #1b8a59;
+          order: solid 2px #1b8a59;
 }
 /*# sourceMappingURL=styles.css.map */

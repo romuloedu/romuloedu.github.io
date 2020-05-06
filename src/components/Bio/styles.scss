@@ -10,7 +10,7 @@
 
     @media ($break-desktop) {
         flex-direction: row;
-        margin: 60px 100px 60px 100px;
+        margin: 40px 100px 40px 100px;
     }
 
     .bioTitle{
@@ -45,6 +45,67 @@
 
         p {
             line-height: 1.7;
+        };
+
+        a {
+            margin-bottom: 10px; 
+            margin-right: 0px;
+
+            @media ($break-desktop) {
+                margin-right: 10px;
+                margin-bottom: 0px;
+            }
+        };
+
+        .downloadCV {
+            min-width: 90%;
+            display: inline-block;
+            border: solid 2px $green;
+            background-color: $green;
+            font-weight: 700;
+            padding: 13px;
+            border-radius: 5px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 1s;
+            margin-top: 20px;
+
+            @media ($break-desktop) {
+                min-width: 140px;
+            }
+    
+            &:hover{
+                background-color: $dark-green;
+            }
+        }
+
+        .visitLinkedIn {
+            min-width: 90%;
+            display: inline-block;
+            border: solid 2px $green;
+            font-weight: 700;
+            padding: 13px;
+            border-radius: 5px;
+            color: $green;
+            text-transform: uppercase;
+            font-size: 15px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 1s;
+            margin-top: 20px;
+
+            @media ($break-desktop) {
+                min-width: 140px;
+            }
+    
+            &:hover{
+                color: #fff;
+                background-color: $dark-green;
+                order: solid 2px $dark-green;
+            }
         }
     }
 }

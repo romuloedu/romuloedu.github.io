@@ -67,9 +67,9 @@
   min-height: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 10px 0px 10px 0px;
-  padding: 50px;
+  padding: 40px 50px 40px 50px;
   background-color: azure;
 }
 
@@ -80,23 +80,23 @@
   }
 }
 
-.skillWrapper .skillCards div:nth-child(1n) {
+.skillWrapper .skillCards div:nth-child(n) {
   margin: 0px 30px 30px 0px;
 }
 
-.skillWrapper .skillCards div:nth-child(1) {
+.skillWrapper .skillCards div:nth-child(4n+1) {
   background-image: linear-gradient(135deg, #36c4d0 10%, #28A1AB 100%);
 }
 
-.skillWrapper .skillCards div:nth-child(2) {
+.skillWrapper .skillCards div:nth-child(4n+2) {
   background-image: linear-gradient(135deg, #f5bb6f 10%, #F2A53F 100%);
 }
 
-.skillWrapper .skillCards div:nth-child(3) {
+.skillWrapper .skillCards div:nth-child(4n+3) {
   background-image: linear-gradient(135deg, #33d88f 10%, #23B574 100%);
 }
 
-.skillWrapper .skillCards div:nth-child(4) {
+.skillWrapper .skillCards div:nth-child(4n+4) {
   background-image: linear-gradient(135deg, #fd8188 10%, #FC4F59 100%);
 }
 
@@ -117,6 +117,7 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 3vw;
+  text-align: left;
 }
 
 @media (min-width: 1025px) {

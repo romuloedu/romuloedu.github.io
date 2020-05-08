@@ -35,9 +35,9 @@
             width: 100%;
             min-height: 120px;
             box-sizing: border-box;
-            border-radius: 10px;
+            border-radius: 15px;
             margin: 10px 0px 10px 0px;
-            padding: 50px;
+            padding: 40px 50px 40px 50px;
             background-color: azure;
 
             @media ($break-desktop) {
@@ -45,22 +45,22 @@
                 margin: 0px;
             }
 
-            &:nth-child(1n){
+            &:nth-child(n){
                 margin: 0px 30px 30px 0px;
             }
 
-            &:nth-child(1){
+            &:nth-child(4n+1){
                 background-image: linear-gradient( 135deg, $light-blue 10%, $blue 100%);
             }
 
-            &:nth-child(2){
+            &:nth-child(4n+2){
                 background-image: linear-gradient( 135deg, $light-yellow 10%, $yellow 100%);
             }
 
-            &:nth-child(3){
+            &:nth-child(4n+3){
                 background-image: linear-gradient( 135deg, $light-green 10%, $green 100%);
             }
-            &:nth-child(4){
+            &:nth-child(4n+4){
                 background-image: linear-gradient( 135deg, $light-red 10%, $red 100%);
             }
         }
@@ -81,6 +81,7 @@
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 3vw;
+                text-align: left;
 
                 @media ($break-desktop) {
                     font-size: 1.3vw;

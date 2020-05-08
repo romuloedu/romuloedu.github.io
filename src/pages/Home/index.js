@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Intro from '../../components/Intro';
 import Bio from '../../components/Bio';
@@ -8,12 +8,48 @@ import Works from '../../components/Works';
 import './styles.css';
 
 const Home = () => {
+
+    const [skills] = useState(
+        [
+            {
+                name: "Desenvolvimento Web",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+            },
+            {
+                name: "Desenvolvimento Mobile",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+            },
+            {
+                name: "CI/CD",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+            },
+            {
+                name: "Arquitetura de Aplicações",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+            },
+            {
+                name: "Arquitetura de Aplicações",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+            }
+        ]
+    );
+
     return (
         <div className="container">
             <Intro />
             <Bio />
-            <Skills />
-            <Works />
+            <Skills data={skills} />
+            <Works data={skills} />
             {/* <section>
                 <span>Skills</span>
             </section>

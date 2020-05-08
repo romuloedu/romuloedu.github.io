@@ -2,11 +2,26 @@ import React from 'react';
 
 import './styles.css';
 
-const Works = () => {
+const Works = (props) => {
+
+    const { data: works } = props;
+
     return (
-        <div className="worksWrapper">
-            <h1>Works</h1>
-        </div>
+        <section className="worksWrapper">
+            <div className="worksTitle">
+                <h1 className="sectionTitle">Experiências Profissionais</h1>
+            </div>
+            <div className="worksCards">
+                {
+                    works.map((work, index) =>
+                        <div className="worksCard" key={index}>
+                            <h1>{work.name}</h1>
+                            <p>{work.description}</p>
+                        </div>
+                    )
+                }
+            </div>
+        </section>
     );
 }
 

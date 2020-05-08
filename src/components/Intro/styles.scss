@@ -31,7 +31,7 @@
         word-wrap: break-word;
         text-align: center;
         padding: 20px;
-        margin-top: 15vmax;
+        margin-top: 20vw;
         animation: animateWelcomeInfo forwards 1s;
     
         @media ($break-desktop) {
@@ -41,7 +41,7 @@
         }
 
         span{
-            font-size: 3vmax;
+            font-size: 4vw;
             text-transform: uppercase;
             font-weight: 300;
             line-height: 1.2;   
@@ -58,7 +58,7 @@
         }
     
         h1 {
-            font-size: 5.5vmax;
+            font-size: 8vw;
             font-weight: 600;
             line-height: 1.2;
     
@@ -68,7 +68,7 @@
         }
     
         h2 {
-            font-size: 2.6vmax;
+            font-size: 4vw;
             line-break: loose;
             font-weight: 300;
             color: gray;

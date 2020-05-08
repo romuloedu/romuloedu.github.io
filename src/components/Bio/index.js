@@ -1,12 +1,15 @@
 import React from 'react';
 
+import ProfilePic from '../../assets/profile-pic.jpg';
+
 import './styles.css';
 
 const Bio = () => {
     return (
         <section className="bioWrapper">
             <div className="bioTitle">
-                <h1 className="sectionTitle">Sobre mim</h1>
+                <h1 className="sectionTitle">Sobre mim</h1><br />
+                <img src={ProfilePic} alt="" />
             </div>
             <div className="bioDescription">
                 <p>

@@ -22,26 +22,26 @@ html, body {
 }
 
 .sectionTitle {
-  position: relative;
-  padding: 0px 0px 5px 0px;
-  margin: 0px 0px 20px 0px;
-  font-size: 6vw;
-  font-weight: 600;
-  text-transform: uppercase;
-  display: inline-block;
-  color: $dark-yellow;
+    position: relative;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 6vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $dark-yellow;
 
-  @media ($break-desktop) {
-    font-size: 3.5vw;
-  }
+    @media ($break-desktop) {
+      font-size: 3.5vw;
+    }
 
-  &:after{
-      position: absolute;
-      content: "";
-      width: 50%;
-      height: 1px;
-      left: 25%;
-      bottom: 0px;
-      background-color: $dark-yellow;
-  }
+    &:after{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        left: 25%;
+        bottom: 0px;
+        background-color: $dark-yellow;
+    }
 }

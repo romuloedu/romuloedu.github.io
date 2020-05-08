@@ -7,9 +7,10 @@ const Intro = () => {
         <section className="introWrapper">
             <div className="col1">
                 <span>Olá,</span>
-                <h1>Sou Romulo.</h1>
-                <h2>Desenvolvedor Fullstack | C#, React e NodeJS.</h2>
-                <a href="#">Me Conheça</a>
+                <h1>Sou Romulo Eduardo.</h1>
+                <h2>Desenvolvedor Fullstack</h2>
+                <h2>C# | ReactJS e React Native | Node.JS</h2>
+                <a href="#">Leia Minha Bio</a>
             </div>
             <div className="col2">
                 <div className="layer1"></div>

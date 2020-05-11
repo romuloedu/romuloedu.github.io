@@ -35,7 +35,7 @@
 }
 
 .bioWrapper .bioTitle img {
-  max-width: 30vw;
+  max-width: 22vmax;
   height: auto;
   margin: 20px 0px 20px 0px;
   border-radius: 50%;

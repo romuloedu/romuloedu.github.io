@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ProfilePic from '../../assets/profile-pic.jpg';
+import CV from '../../assets/cv.pdf';
 
 import './styles.css';
 
@@ -24,7 +25,7 @@ const Bio = () => {
                     e PL/SQL e com os bancos Oracle, MySQL, PostgreSQL e MongoDB.
                     Além de padrões de projeto com MVC e MVVM.
                 </p>
-                <a href="#" className="downloadCV">
+                <a href={CV} className="downloadCV" target="blank">
                     Download do Meu Currículo
                 </a>
                 <a href="https://linkedin.com/in/romuloeduardo/"

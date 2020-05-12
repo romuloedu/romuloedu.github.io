@@ -7,7 +7,7 @@ import './styles.css';
 
 const Bio = () => {
     return (
-        <section className="bioWrapper">
+        <section className="bioWrapper" id="bio">
             <div className="bioTitle">
                 <h1 className="sectionTitle">Sobre mim</h1><br />
                 <img src={ProfilePic} alt="" />

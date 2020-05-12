@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import './styles.css';
 
@@ -10,7 +11,7 @@ const Intro = () => {
                 <h1>Sou Romulo Eduardo.</h1>
                 <h2>Desenvolvedor Fullstack</h2>
                 <h2>C# | React | Node.js</h2>
-                <a href="#">Me Conheça</a>
+                <AnchorLink href="#bio">Me Conheça</AnchorLink>
             </div>
             <div className="col2">
                 <div className="layer1"></div>

@@ -6,14 +6,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 0px 40px 0px;
+  padding: 40px;
   background-color: rgba(127, 136, 189, 0.08);
+  overflow: hidden;
 }
 
 @media (min-width: 1025px) {
@@ -44,6 +39,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -57,6 +53,20 @@
         -ms-flex-direction: row;
             flex-direction: row;
     overflow-y: scroll;
+  }
+}
+
+.worksWrapper .worksCards div {
+  background-color: aquamarine;
+  border-radius: 15px;
+  margin: 0px 0px 30px 0px;
+  padding: 40px 50px 40px 50px;
+}
+
+@media (min-width: 1025px) {
+  .worksWrapper .worksCards div {
+    min-width: 420px;
+    margin: 0px 10px 0px 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

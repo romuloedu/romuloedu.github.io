@@ -103,25 +103,14 @@
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 5vw;
-}
-
-@media (min-width: 1025px) {
-  .skillWrapper .skillCards .skillCard h1 {
-    font-size: 2.3vw;
-  }
+  font-size: 24px;
 }
 
 .skillWrapper .skillCards .skillCard p {
   color: #fff;
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 16px;
   text-align: left;
-}
-
-@media (min-width: 1025px) {
-  .skillWrapper .skillCards .skillCard p {
-    font-size: 1.3vw;
-  }
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */

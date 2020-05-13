@@ -83,6 +83,33 @@
 .worksWrapper .worksCards .worksCard h1, .worksWrapper .worksCards .worksCard h2, .worksWrapper .worksCards .worksCard h3 {
   padding: 0px;
   margin: 0px;
+  font-weight: 300;
+}
+
+.worksWrapper .worksCards .worksCard .dateWork {
+  font-size: 16px;
+  color: gray;
+}
+
+.worksWrapper .worksCards .worksCard .titleWork {
+  font-size: 22px;
+  margin: 5px 0px 5px 0px;
+  font-weight: 600;
+}
+
+.worksWrapper .worksCards .worksCard .companyWork {
+  font-size: 18px;
+  color: gray;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.worksWrapper .worksCards .worksCard .descriptionWork {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .worksWrapper .worksCards .worksCard .actualBadge {

@@ -20,10 +20,10 @@ const Works = (props) => {
                                     ? <span className="actualBadge">Atual</span>
                                     : null
                             }
-                            <h2>{work.begin} - {work.end}</h2>
-                            <h1>{work.title}</h1>
-                            <h3>{work.company}</h3>
-                            <p>{work.description}</p>
+                            <h2 className="dateWork">{work.begin} - {work.end}</h2>
+                            <h1 className="titleWork">{work.title}</h1>
+                            <h3 className="companyWork">{work.company}</h3>
+                            <p className="descriptionWork">{work.description}</p>
                         </div>
                     )
                 }

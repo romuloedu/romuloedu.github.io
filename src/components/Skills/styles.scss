@@ -69,22 +69,15 @@
                 color: #fff;
                 font-weight: 600;
                 text-transform: uppercase;
-                font-size: 5vw;
-
-                @media ($break-desktop) {
-                    font-size: 2.3vw;
-                }
+                font-size: 24px;
             }
 
             p {
                 color: #fff;
                 text-transform: uppercase;
-                font-size: 3vw;
+                font-size: 16px;
                 text-align: left;
-
-                @media ($break-desktop) {
-                    font-size: 1.3vw;
-                }
+                font-weight: 400;
             }
         }
     }

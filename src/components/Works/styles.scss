@@ -54,6 +54,33 @@
             h1, h2, h3 {
                 padding: 0px;
                 margin: 0px;
+                font-weight: 300;
+            }
+
+            .dateWork {
+                font-size: 16px;
+                color: gray;
+            }
+
+            .titleWork {
+                font-size: 22px;               
+                margin: 5px 0px 5px 0px;
+                font-weight: 600;
+            }
+
+            .companyWork {
+                font-size: 18px;
+                color: gray;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .descriptionWork {
+                margin-top: 30px;
+                font-size: 16px;
+                font-weight: 300;
+                text-transform: uppercase;
+                text-align: left;
             }
 
             .actualBadge {

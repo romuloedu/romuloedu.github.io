@@ -26,12 +26,17 @@ const Bio = () => {
                     Além de padrões de projeto com MVC e MVVM.
                 </p>
                 <a href={CV} className="downloadCV" target="blank">
-                    Download do Meu Currículo
+                    Meu Currículo
                 </a>
                 <a href="https://linkedin.com/in/romuloeduardo/"
                     className="visitLinkedIn"
                     target="blank">
-                    Meu Perfil no LinkedIn
+                    Meu LinkedIn
+                </a>
+                <a href="https://github.com/romuloedu"
+                    className="visitLinkedIn"
+                    target="blank">
+                    Meu GitHub
                 </a>
             </div>
         </section >

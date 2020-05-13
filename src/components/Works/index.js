@@ -15,13 +15,20 @@ const Works = (props) => {
                 {
                     works.map((work, index) =>
                         <div className="worksCard" key={index}>
-                            <h1>{work.name}</h1>
+                            {
+                                index === 0
+                                    ? <span className="actualBadge">Atual</span>
+                                    : null
+                            }
+                            <h2>{work.begin} - {work.end}</h2>
+                            <h1>{work.title}</h1>
+                            <h3>{work.company}</h3>
                             <p>{work.description}</p>
                         </div>
                     )
                 }
             </div>
-        </section>
+        </section >
     );
 }
 

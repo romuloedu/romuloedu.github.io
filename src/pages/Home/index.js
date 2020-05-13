@@ -9,50 +9,80 @@ import './styles.css';
 
 const Home = () => {
 
-    const [skills] = useState(
-        [
-            {
-                name: "Desenvolvimento Web",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
-            },
-            {
-                name: "Desenvolvimento Mobile",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
-            },
-            {
-                name: "CI/CD",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
-            },
-            {
-                name: "Arquitetura de Aplicações",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
-            },
-            {
-                name: "Arquitetura de Aplicações",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                    "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                    "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
-            }
-        ]
-    );
+    const [data] = useState(
+        {
+            skills: [
+                {
+                    name: "Desenvolvimento Web",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                },
+                {
+                    name: "Desenvolvimento Mobile",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                },
+                {
+                    name: "CI/CD",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                },
+                {
+                    name: "Arquitetura de Aplicações",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                }
+            ],
+            experiences: [
+                {
+                    company: "Microsoft",
+                    title: "Desenvolvimento Web",
+                    begin: "01/01/2007",
+                    end: "31/12/2020",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                },
+                {
+                    company: "Microsoft",
+                    title: "Desenvolvimento Web",
+                    begin: "",
+                    end: "",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                },
+                {
+                    company: "Microsoft",
+                    title: "Desenvolvimento Web",
+                    begin: "",
+                    end: "",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
+                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
+                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                }
+            ]
+        });
 
     return (
         <div className="container">
             <Intro />
             <Bio />
-            <Skills data={skills} />
-            <Works data={skills} />
-            {/* <section>
-                <span>Skills</span>
-            </section>
+            {
+                data.skills.length > 0
+                    ? <Skills data={data.skills} />
+                    : null
+            }
+            {
+                data.experiences.length > 0
+                    ? <Works data={data.experiences} />
+                    : null
+            }
+            {/*
             <section>
                 <span>GitHub</span>
             </section>

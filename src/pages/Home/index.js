@@ -23,12 +23,16 @@ const Home = () => {
                     description: "Modelos preditivos com Python, Machine Learning, Deep Learning e redes neurais aplicados à análise de sinistralidade e tomada de decisão em saúde."
                 },
                 {
-                    name: "Engenharia de Dados",
-                    description: "Pipelines de dados com SQL, Oracle, PostgreSQL e MongoDB. Integrações e automações com Oracle AQ, Entity Framework e n8n."
+                    name: "Desenvolvimento Mobile",
+                    description: "Aplicativos multiplataforma com React Native e interfaces web responsivas. Foco em experiência do usuário e integração com APIs REST e serviços em nuvem."
                 },
                 {
                     name: "Arquitetura de Aplicações",
-                    description: "Design de sistemas com padrões MVC e MVVM. Gestão técnica de equipes e produtos digitais, do planejamento à entrega em produção."
+                    description: "Design de sistemas com padrões MVC e MVVM. Pipelines de dados com Oracle, PostgreSQL, MongoDB e automações com Oracle AQ e n8n."
+                },
+                {
+                    name: "Coordenação & Empreendedorismo",
+                    description: "Cofundador de três startups (Antecipa Saúde, Square Labs, MedDay). Gestão técnica de equipes, produto e roadmap. Mentor de tecnologia no hackathon do SINEPE/PR."
                 }
             ],
             experiences: [

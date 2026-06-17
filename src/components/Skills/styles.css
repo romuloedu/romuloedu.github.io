@@ -146,4 +146,9 @@
   transform: translateY(0);
   transition-delay: 0.35s;
 }
+.skillWrapper .skillCards.reveal-visible .skillCard:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.45s;
+}
 /*# sourceMappingURL=styles.css.map */

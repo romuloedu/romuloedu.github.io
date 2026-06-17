@@ -1,164 +1,191 @@
+/* === Works — vertical alternating timeline === */
+
 .worksWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 40px;
-  background-color: rgba(127, 136, 189, 0.08);
+  flex-direction: column;
+  padding: 60px 20px;
+  background-color: rgba(127, 136, 189, 0.05);
   overflow: hidden;
 }
 
 @media (min-width: 1025px) {
   .worksWrapper {
-    padding: 100px 0px 100px 0px;
+    padding: 100px 80px;
   }
 }
 
 .worksWrapper .worksTitle {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.worksWrapper .worksCards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+/* ── timeline container ── */
+.worksWrapper .worksTimeline {
+  position: relative;
   width: 100%;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
+/* mobile: vertical line on left */
+.worksWrapper .worksTimeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #36c4d0 5%, #36c4d0 95%, transparent);
+}
+
+/* desktop: vertical line in center */
 @media (min-width: 1025px) {
-  .worksWrapper .worksCards {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    overflow-y: scroll;
+  .worksWrapper .worksTimeline::before {
+    left: calc(50% - 1px);
+    transform: none;
   }
 }
 
-.worksWrapper .worksCards .worksCard {
+/* ── entries (mobile: single column) ── */
+.worksEntry {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 32px;
+}
+
+/* ── entries (desktop: alternating) ── */
+@media (min-width: 1025px) {
+  .worksEntry {
+    padding-left: 0;
+    width: 50%;
+    margin-bottom: 48px;
+  }
+
+  .worksEntry.entry--left {
+    padding-right: 52px;
+  }
+
+  .worksEntry.entry--right {
+    margin-left: 50%;
+    padding-left: 52px;
+  }
+}
+
+/* ── dot (mobile) ── */
+.worksEntry .timelineDot {
+  position: absolute;
+  left: 3px;
+  top: 22px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #36c4d0;
+  border: 3px solid #0d1117;
+  box-shadow: 0 0 0 2px #36c4d0;
+  z-index: 1;
+}
+
+/* ── dot (desktop) ── */
+@media (min-width: 1025px) {
+  .worksEntry.entry--left .timelineDot {
+    left: auto;
+    right: -8px;
+    top: 24px;
+  }
+
+  .worksEntry.entry--right .timelineDot {
+    left: -8px;
+    top: 24px;
+  }
+}
+
+/* ── glass card ── */
+.worksEntry .worksCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: 15px;
-  background-color: #fff;
-  margin: 0px 0px 30px 0px;
-  padding: 40px 50px 40px 50px;
+  padding: 28px 32px;
   position: relative;
-  border: solid 1px #a1a7ce;
   overflow: hidden;
-  -webkit-transition: background-color ease-in 0.2s;
-  transition: background-color ease-in 0.2s;
+  /* scroll-reveal start state */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (min-width: 1025px) {
-  .worksWrapper .worksCards .worksCard {
-    min-width: 420px;
-    margin: 0px 10px 0px 10px;
-  }
+.worksWrapper .worksTimeline.reveal-visible .worksCard {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.worksWrapper .worksCards .worksCard:hover {
-  background-color: rgba(245, 187, 111, 0.5);
+/* stagger delays */
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(1) .worksCard { transition-delay: 0.05s; }
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(2) .worksCard { transition-delay: 0.13s; }
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(3) .worksCard { transition-delay: 0.21s; }
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(4) .worksCard { transition-delay: 0.29s; }
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(5) .worksCard { transition-delay: 0.37s; }
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(6) .worksCard { transition-delay: 0.45s; }
+.worksWrapper .worksTimeline.reveal-visible .worksEntry:nth-child(7) .worksCard { transition-delay: 0.53s; }
+
+.worksEntry .worksCard:hover {
+  background: rgba(54, 196, 208, 0.08);
+  border-color: rgba(54, 196, 208, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
 }
 
-.worksWrapper .worksCards .worksCard h1, .worksWrapper .worksCards .worksCard h2, .worksWrapper .worksCards .worksCard h3 {
-  padding: 0px;
-  margin: 0px;
+/* ── card typography ── */
+.worksEntry .worksCard h1,
+.worksEntry .worksCard h2,
+.worksEntry .worksCard h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.worksEntry .worksCard .dateWork {
+  font-size: 13px;
+  color: rgba(230, 237, 243, 0.45);
   font-weight: 300;
 }
 
-.worksWrapper .worksCards .worksCard .dateWork {
-  font-size: 16px;
-  color: gray;
-}
-
-.worksWrapper .worksCards .worksCard .titleWork {
-  font-size: 22px;
-  margin: 5px 0px 5px 0px;
+.worksEntry .worksCard .titleWork {
+  font-size: 20px;
+  margin: 6px 0 4px;
   font-weight: 600;
+  color: #e6edf3;
 }
 
-.worksWrapper .worksCards .worksCard .companyWork {
-  font-size: 18px;
-  color: gray;
+.worksEntry .worksCard .companyWork {
+  font-size: 15px;
+  color: #36c4d0;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.worksWrapper .worksCards .worksCard .descriptionWork {
-  margin-top: 30px;
-  font-size: 16px;
+.worksEntry .worksCard .descriptionWork {
+  margin-top: 14px;
+  font-size: 14px;
   font-weight: 300;
-  text-transform: uppercase;
+  line-height: 1.65;
+  color: rgba(230, 237, 243, 0.7);
   text-align: left;
+  text-transform: none;
 }
 
-.worksWrapper .worksCards .worksCard .actualBadge {
-  margin: 0;
-  padding: 0;
-  background: #fd8188;
-  border-style: none;
+/* ── current badge ── */
+.worksEntry .worksCard .actualBadge {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: rgba(253, 129, 136, 0.9);
   color: #fff;
   font-weight: 600;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: translateX(20%) translateY(30%) rotate(45deg);
-          transform: translateX(20%) translateY(30%) rotate(45deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 20px;
 }
-
-.worksWrapper .worksCards .worksCard .actualBadge:before, .worksWrapper .worksCards .worksCard .actualBadge:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  margin: 0 -1px;
-  /* tweak */
-  width: 100%;
-  height: 100%;
-  background: #fd8188;
-}
-
-.worksWrapper .worksCards .worksCard .actualBadge:before {
-  right: 100%;
-}
-
-.worksWrapper .worksCards .worksCard .actualBadge:after {
-  left: 100%;
-}
-
-/* Scroll-reveal animation */
-.worksWrapper .worksCards .worksCard {
-  opacity: 0;
-  transform: translateX(24px);
-  transition: opacity 0.55s ease, transform 0.55s ease, background-color ease-in 0.2s;
-}
-
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(1)  { opacity: 1; transform: translateX(0); transition-delay: 0.05s; }
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(2)  { opacity: 1; transform: translateX(0); transition-delay: 0.12s; }
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(3)  { opacity: 1; transform: translateX(0); transition-delay: 0.19s; }
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(4)  { opacity: 1; transform: translateX(0); transition-delay: 0.26s; }
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(5)  { opacity: 1; transform: translateX(0); transition-delay: 0.33s; }
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(6)  { opacity: 1; transform: translateX(0); transition-delay: 0.40s; }
-.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(7)  { opacity: 1; transform: translateX(0); transition-delay: 0.47s; }
-/*# sourceMappingURL=styles.css.map */

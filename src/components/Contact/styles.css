@@ -38,19 +38,25 @@
   font-size: 15px;
   font-weight: 300;
   padding: 14px 18px;
-  border: solid 2px #a1a7ce;
+  border: 1px solid rgba(161, 167, 206, 0.25);
   border-radius: 8px;
   outline: none;
-  background: #fff;
-  color: #333;
-  transition: border-color 0.3s;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e6edf3;
+  transition: border-color 0.3s, background 0.3s;
   box-sizing: border-box;
   resize: vertical;
+}
+
+.contactWrapper .contactForm input::placeholder,
+.contactWrapper .contactForm textarea::placeholder {
+  color: rgba(230, 237, 243, 0.35);
 }
 
 .contactWrapper .contactForm input:focus,
 .contactWrapper .contactForm textarea:focus {
   border-color: #28A1AB;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .contactWrapper .contactForm button {

@@ -109,7 +109,7 @@
   font-size: 4vw;
   line-break: loose;
   font-weight: 300;
-  color: gray;
+  color: rgba(230, 237, 243, 0.6);
 }
 
 @media (min-width: 1025px) {

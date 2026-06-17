@@ -4,6 +4,8 @@ import Intro from '../../components/Intro';
 import Bio from '../../components/Bio';
 import Skills from '../../components/Skills';
 import Works from '../../components/Works';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer';
 
 import './styles.css';
 
@@ -13,84 +15,78 @@ const Home = () => {
         {
             skills: [
                 {
-                    name: "Desenvolvimento Web",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    name: "Desenvolvimento de Software",
+                    description: "Fullstack com C#, .NET Core, React, TypeScript e Node.js. Especializado em sistemas escaláveis e APIs robustas para o setor de saúde suplementar."
                 },
                 {
-                    name: "Desenvolvimento Mobile",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    name: "Ciência de Dados & IA",
+                    description: "Modelos preditivos com Python, Machine Learning, Deep Learning e redes neurais aplicados à análise de sinistralidade e tomada de decisão em saúde."
                 },
                 {
-                    name: "CI/CD",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    name: "Engenharia de Dados",
+                    description: "Pipelines de dados com SQL, Oracle, PostgreSQL e MongoDB. Integrações e automações com Oracle AQ, Entity Framework e n8n."
                 },
                 {
                     name: "Arquitetura de Aplicações",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    description: "Design de sistemas com padrões MVC e MVVM. Gestão técnica de equipes e produtos digitais, do planejamento à entrega em produção."
                 }
             ],
             experiences: [
                 {
+                    company: "Antecipa Saúde",
+                    title: "Cofundador",
+                    begin: "05/2026",
+                    end: "até o momento",
+                    isCurrent: true,
+                    description: "Healthtech pré-incubada no Porto Digital (Recife) que desenvolve modelos preditivos de sinistralidade para operadoras de saúde de médio porte."
+                },
+                {
                     company: "Square Labs",
-                    title: "Sócio-Fundador / Desenvolvedor",
+                    title: "Cofundador & Coordenador Técnico",
                     begin: "02/2018",
                     end: "até o momento",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    isCurrent: true,
+                    description: "Fundei a Square Labs para oferecer desenvolvimento de software e soluções de dados sob medida. Atuamos com aplicativos, sites e modelos de dados para empresas de diversos segmentos."
                 },
                 {
                     company: "MedDay",
-                    title: "Sócio-Fundador / Desenvolvedor",
+                    title: "Cofundador",
                     begin: "10/2018",
                     end: "12/2019",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    isCurrent: false,
+                    description: "Startup de healthtech focada em soluções digitais para gestão de clínicas e serviços médicos no interior de Pernambuco."
                 },
                 {
                     company: "Fundação Parque Tecnológico Itaipu",
                     title: "Analista de Sistemas",
                     begin: "08/2016",
                     end: "12/2016",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    isCurrent: false,
+                    description: "Desenvolvimento do SARF — Software de Análise de Registros e Fasores — ferramenta de análise de qualidade de energia elétrica em ambiente de alta tensão."
                 },
                 {
                     company: "Unimed Caruaru",
                     title: "Coordenador de TI",
                     begin: "01/2010",
                     end: "03/2016",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    isCurrent: false,
+                    description: "Liderança técnica do departamento de TI. Gestão de projetos, equipe de desenvolvimento e infraestrutura. Responsável pela certificação ISO 9001:2008 da área."
                 },
                 {
                     company: "Unimed Caruaru",
                     title: "Analista de Sistemas",
                     begin: "07/2009",
                     end: "12/2009",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    isCurrent: false,
+                    description: "Análise, modelagem e desenvolvimento de sistemas internos para a operadora de saúde, com foco em integrações e processos corporativos."
                 },
                 {
                     company: "Unimed Caruaru",
                     title: "Desenvolvedor de Software",
                     begin: "08/2007",
                     end: "03/2009",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
-                        "Pellentesque varius, quam ac varius semper, nisi nulla pulvinar sem, " +
-                        "nec efficitur elit risus molestie lectus. Quisque ut imperdiet dui, in rutrum odio."
+                    isCurrent: false,
+                    description: "Desenvolvimento e manutenção de sistemas corporativos com Oracle, PL/SQL e .NET para suporte às operações da operadora de saúde."
                 }
             ]
         });
@@ -109,19 +105,8 @@ const Home = () => {
                     ? <Works data={data.experiences} />
                     : null
             }
-            {/*
-            <section>
-                <span>GitHub</span>
-            </section>
-            <section>
-                <span>LinkedIn</span>
-            </section>
-            <section>
-                <span>Contato</span>
-            </section>
-            <section>
-                <span>Rodapé</span>
-            </section> */}
+            <Contact />
+            <Footer />
         </div>
     );
 }

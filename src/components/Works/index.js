@@ -1,22 +1,24 @@
 import React from 'react';
 
+import useScrollReveal from '../../common/useScrollReveal';
 import './styles.css';
 
 const Works = (props) => {
 
     const { data: works } = props;
+    const cardsRef = useScrollReveal(0.05);
 
     return (
         <section className="worksWrapper">
             <div className="worksTitle">
                 <h1 className="sectionTitle">Experiências Profissionais</h1>
             </div>
-            <div className="worksCards">
+            <div className="worksCards" ref={cardsRef}>
                 {
                     works.map((work, index) =>
                         <div className="worksCard" key={index}>
                             {
-                                index === 0
+                                work.isCurrent
                                     ? <span className="actualBadge">Atual</span>
                                     : null
                             }
@@ -28,7 +30,7 @@ const Works = (props) => {
                     )
                 }
             </div>
-        </section >
+        </section>
     );
 }
 

@@ -146,4 +146,19 @@
 .worksWrapper .worksCards .worksCard .actualBadge:after {
   left: 100%;
 }
+
+/* Scroll-reveal animation */
+.worksWrapper .worksCards .worksCard {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease, background-color ease-in 0.2s;
+}
+
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(1)  { opacity: 1; transform: translateX(0); transition-delay: 0.05s; }
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(2)  { opacity: 1; transform: translateX(0); transition-delay: 0.12s; }
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(3)  { opacity: 1; transform: translateX(0); transition-delay: 0.19s; }
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(4)  { opacity: 1; transform: translateX(0); transition-delay: 0.26s; }
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(5)  { opacity: 1; transform: translateX(0); transition-delay: 0.33s; }
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(6)  { opacity: 1; transform: translateX(0); transition-delay: 0.40s; }
+.worksWrapper .worksCards.reveal-visible .worksCard:nth-child(7)  { opacity: 1; transform: translateX(0); transition-delay: 0.47s; }
 /*# sourceMappingURL=styles.css.map */

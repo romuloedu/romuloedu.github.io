@@ -1,0 +1,73 @@
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.contactWrapper.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 1025px) {
+  .contactWrapper {
+    padding: 100px 0;
+  }
+}
+
+.contactWrapper .contactTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactWrapper .contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  gap: 16px;
+}
+
+.contactWrapper .contactForm input,
+.contactWrapper .contactForm textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 14px 18px;
+  border: solid 2px #a1a7ce;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contactWrapper .contactForm input:focus,
+.contactWrapper .contactForm textarea:focus {
+  border-color: #28A1AB;
+}
+
+.contactWrapper .contactForm button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px;
+  background-color: #23B574;
+  border: solid 2px #23B574;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.contactWrapper .contactForm button:hover {
+  background-color: #198f5b;
+  border-color: #198f5b;
+}

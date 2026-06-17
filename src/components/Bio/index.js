@@ -10,20 +10,21 @@ const Bio = () => {
         <section className="bioWrapper" id="bio">
             <div className="bioTitle">
                 <h1 className="sectionTitle">Sobre mim</h1><br />
-                <img src={ProfilePic} alt="" />
+                <img src={ProfilePic} alt="Romulo Eduardo" />
             </div>
             <div className="bioDescription">
                 <p>
-                    Formado em Análise e Desenvolvimento de Sistemas pela FAFICA,
-                    venho me especializando no desenvolvimento
-                    de aplicativos e sites utilizando a linguagem C# com os
-                    frameworks .NET Standard e .NET Core (multiplataforma).
+                    Coordenador de Desenvolvimento e Cientista de Dados com foco em saúde suplementar.
+                    Cofundador da Antecipa Saúde, healthtech pré-incubada no Porto Digital (Recife) que
+                    desenvolve modelos preditivos de sinistralidade para operadoras de saúde. À frente da
+                    Square Labs desde 2018, entregando soluções de software e dados sob medida para
+                    empresas de diferentes segmentos.
                 </p>
                 <p>
-                    No contexto do desenvolvimento de softwares, trabalhei com
-                    ORMs como NHibernate e Entity Framework, as linguagens SQL
-                    e PL/SQL e com os bancos Oracle, MySQL, PostgreSQL e MongoDB.
-                    Além de padrões de projeto com MVC e MVVM.
+                    Minha stack principal abrange C# e .NET no backend, Python para modelos de machine
+                    learning e deep learning, e React no frontend. Formado em Análise e Desenvolvimento
+                    de Sistemas pela FAFICA, com MBA em Data Science e Analytics pela USP/Esalq e
+                    Especialização em Deep Learning pelo Centro de Informática da UFPE.
                 </p>
                 <a href={CV} className="downloadCV" target="blank">
                     Meu Currículo
